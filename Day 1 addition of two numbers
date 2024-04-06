@@ -1,0 +1,14 @@
+
+import java.util.*;
+class Sum
+{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in)
+system.out.println("Enter a value");
+int a=s.newInt();
+system.out.println("Enter b value");
+intb a=S.newInt();
+system.out.println("sum of numbers"+(a+b))
+}
+}

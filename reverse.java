@@ -1,17 +1,22 @@
-import java.util.Scanner;
-public class reverse{
-public static void main(String[] args){
-Scanner input=new Scanner(System.in);
-System.out.println("Enter a number");
-int n=input.nextInt();
-int digit=0;
-int temp=0;
-while(n>0)
+import java.util.*;
+class reverse{
+public static void main(String[]args){
+Scanner in=new Scanner(System.in);
+int rev=0,rem=0;
+
+System.out.print("Enter a number to be reverse:");
+int num=in.nextInt();
+int temp=num;
+for(int i=1;i<=num;i++)
 {
-digit=n%10;
-temp=temp*10+digit;
-n=n/10;
+while(num>0)
+{
+rem=num%10;
+ rev=rem+(rev*10);
+num=num/10;
+
 }
-System.out.println("The reverse is"+temp);
+System.out.print("REVERSED NUMBER IS :"+rev);
+}
 }
 }
