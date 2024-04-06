@@ -1,18 +1,13 @@
 import java.util.Scanner;
-public class factorial{
-public static void main(String[] args){
-Scanner input=new Scanner(System.in);
-System.out.println("Enter a number");
-int n=input.nextInt();
-int fact=1;
-if(n>0){
-for(int i=n;i>0;i--)
-{
-fact=fact*i;
+public class factorial {
+    public static void main(String []args){
+        Scanner obj=new Scanner(System.in);
+        System.out.print("Enter the number::");
+        int n=obj.nextInt(),fact=1;
+        while(n!=0){
+           fact=fact*n;
+           n=n-1;
+        }
+        System.out.print("The factorial of given number is::"+fact);
+    }
 }
-System.out.println("Factorial is "+fact);
-}
-
-}
-}
-
